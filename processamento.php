@@ -30,10 +30,10 @@
         $formatos_permitidos = array("jpg", "gif", "bmp", "png");
 
         if (in_array($arquivo['type'], $formatos_permitidos)){
-            echo "<p>Foto de perfil escolhida!</p>"
-        echo "<img>". implode($arquivo) . "</img>"
-        }; else {
-            echo "<p>Formato de arquivo não permitido!</p>"
+            echo "<p>Foto de perfil escolhida!</p>";
+            echo "<img>". implode($arquivo) . "</img>";
+        } else {
+            echo "<p>Formato de arquivo não permitido!</p>";
         }
     
     ?>
