@@ -31,7 +31,7 @@
 
         if (in_array($arquivo['type'], $formatos_permitidos)){
             echo "<p>Foto de perfil escolhida!</p>"
-            echo $arquivo
+        echo "<img>". implode($arquivo) . "</img>"
         }; else {
             echo "<p>Formato de arquivo não permitido!</p>"
         }
