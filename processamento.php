@@ -35,7 +35,6 @@
         } else {
             echo "<p>Formato de arquivo não permitido!</p>";
         }
-    
     ?>
 </body>
 </html>
