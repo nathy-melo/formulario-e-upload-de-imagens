@@ -27,9 +27,9 @@
             echo "<p><strong>Interesses:</strong> Nenhum interesse selecionado</p>";
         };
 
-        $formatos_permitidos = array("image/jpg", "image/gif", "image/bmp", "image/png");
-        move_uploaded_file($arquivo['tmp_name'], "formulario-e-upload-de-imagens/" .$arquivo["name"])
-        if (in_array($arquivo['type'],  $formatos_permitidos)){//error
+        $formatos_permitidos = array("image/jpg", "image/gif", "image/bmp", "image/png"); 
+        move_uploaded_file($arquivo['tmp_name'], "formulario-e-upload-de-imagens/" .$arquivo["name"]); //erro nessa linha, acho que errei o que eu devia pedir
+        if (in_array($arquivo['type'],  $formatos_permitidos)){
             echo "<p>Foto de perfil escolhida!</p>"; 
             echo "<img src= ". ($arquivo) ."></img>";
         } else {
